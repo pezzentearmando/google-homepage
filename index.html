@@ -1,14 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<style>
+    /* estilo CCS */
+
+    /* barra de navegacion */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+    }
+    
+    li{
+        float: left;;
+        border-right: 1px solid #bbb;
+    }
+
+    /* ultimo elemento de la barra */
+    li:last-child {
+        border-right: none;
+    }
+
+    /* estilo para cada elemento */
+    li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 5px 35px;
+        text-decoration: none;
+    }
+
+    /* estilo para cuando pasa el mouse */
+    li a:hover {
+        background-color: #111;
+        color: white;
+    }
+
+    /* tab activa */
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    /*logo de google */
+    .google-logo {
+        text-align: center;
+        margin-top: 100px;
+    }
+</style>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Google</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
+
 <body>
+    <!-- barra de navegacion -->
+    <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li style="float: right;"><a class="active" href="about.asp">About</a></li>
+    </ul>
+
+    <!-- logo Google -->
+    <div class="google-logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+
+    <!-- barra de busqueda -->
+    <div style="text-align: center;">
+        <input type="text" placeholder="Seach ...">
+    </div>
+
     
 </body>
 </html>
