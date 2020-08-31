@@ -3,29 +3,43 @@
 
 <head>
     <title>Google</title>
-    
-    <!-- Arvhico con codigo de estilo CCS-->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <!-- barra de navegacion -->
-    <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li style="float: right;"><a class="active" href="about.asp">About</a></li>
-    </ul>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar">
+        <ul> 
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Imagenes</a></li>
+            <li><a id="apps"></a></li>
+            <li><button id="signin" type="button">Sign In</button></li>
+        </ul>
+    </nav>
 
-    <!-- logo Google -->
-    <div class="google-logo">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    </div>
+    <!-- AREA MAIN -->
+    <main>
+        <!-- LOGO DE GOOGLE -->
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 
-    <!-- barra de busqueda -->
-    <div style="text-align: center;">
-        <input type="text" placeholder="Seach ...">
-    </div>
-        
+        <!-- BARRA DE BUSQUEDA -->
+        <form id="busqueda">
+            <input id="cuadroBusq" type="text">
+            <br>
+            <button type="button">Buscar con Google</button>
+            <button type="button">Me siento con suerte</button>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li>
+            <li style="float:right"><a href="#">Settings</a></li>
+            <li style="float:right"><a href="#">Terms</a></li>
+            <li style="float:right"><a href="#">Privacy</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

@@ -1,48 +1,104 @@
-/* estilo CCS para GOOGLE HOMEPAGE*/
+/* CCS para GOOGLE HOMEPAGE*/
 
 /* barra de navegacion */
+.navbar {
+    position: absolute;
+    top: 0;
+    border:;
+    width: 100%;
+    font: 13px arial, sans-serif;
+}
+
+.navbar ul {
+    float: right;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
 }
 
-li{
-    float: left;;
-    border-right: 1px solid #bbb;
+li {
+    float: left;
 }
 
-/* ultimo elemento de la barra */
-li:last-child {
-    border-right: none;
-}
-
-/* estilo para cada elemento */
 li a {
     display: block;
-    color: #666;
     text-align: center;
-    padding: 5px 35px;
+    padding: 14px 16px;
     text-decoration: none;
+    color: black;
 }
 
-/* estilo para cuando pasa el mouse */
 li a:hover {
-    background-color: #111;
-    color: white;
+    text-decoration: underline;
 }
 
-/* tab activa */
-.active {
-    background-color: #4CAF50;
+/* boton signin */
+#signin {
+    margin-top: 10px;
+    margin-right: 50px;
+    padding: 7px 10px 7px 10px;
+    background-color: #4285f4;
     color: white;
+    font-weight: bold;
+    font-size: 13px;
 }
 
-/*logo de google */
-.google-logo {
+/* todos los botones */
+button {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(105 105 105);
+    background-color: #F2F2F2;
+    border-radius: 3px;
+}
+button:hover {
+    border: 1px solid rgb(210 210 210);
+    color: black;
+}
+
+/* area MAIN */
+main {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+}
+
+/* logo de google */
+.logo {
     text-align: center;
-    margin-top: 100px;
+    height: 92px;
+    width: 272px;
+    display: block;
+    margin: 0px auto 30px;
+}
+
+/* barra de busqueda */
+#busqueda {
+    text-align: center;
+}
+#cuadroBusq {
+    width: 582px;
+    height: 44px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0px 0px;
+    border: 1px rgb(210 210 210) solid;
+    border-radius: 30px 30px 30px 30px;
+}
+#cuadroBusq:hover {
+    box-shadow: 0px 1px 4px 4px #F2F2F2;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    font: 14px arial, sans-serif;    
 }
